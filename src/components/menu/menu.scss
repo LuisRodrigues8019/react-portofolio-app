@@ -39,4 +39,15 @@
             }
         }
     }
+
+    .iconsBar{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        font-size: 25px;
+        margin-right: 18px;
+        margin-top: 5px;
+    }
+   
 }

@@ -1,3 +1,135 @@
-.intro{
-    background-color:magenta;
+.intro {
+  background-color: white;
+  display: flex;
+
+  .left {
+    flex: 0.5;
+    overflow: hidden;
+
+    .imgContainer {
+      width: 750px;
+      height: 750px;
+      background-color: #be2f29;
+      border-radius: 50%;
+      display: flex;
+      align-items: flex-end;
+      justify-content: center;
+      float: right;
+
+      img {
+        height: 90%;
+      }
+    }
+  }
+  .right {
+    flex: 0.5;
+    position: relative;
+
+    .wrapper {
+      width: 100%;
+      height: 100%;
+      padding-left: 50px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      h1 {
+        font-size: 60px;
+        margin: 10px 0;
+        color: #0c1115;
+      }
+
+      h2 {
+        font-size: 35px;
+        color: #0c1115;
+      }
+
+      h3 {
+        font-size: 30px;
+
+        span {
+          font-size: 30px;
+          color: #ecaf44;
+        }
+
+        .ityped-cursor {
+          animation: blink 1s infinite;
+
+          @keyframes blink {
+            50% {
+              opacity: 1;
+            }
+            100% {
+              opacity: 0;
+            }
+          }
+         
+    
+        }
+      }
+      
+    }
+    .button {
+      margin-top: 20px;
+      margin-left: 80px;
+      justify-content: center;
+
+      .btn-hover {
+        width: 170px;
+        font-size: 16px;
+        font-weight: 600;
+        color: #fff;
+        cursor: pointer;
+        margin: 20px;
+        height: 45px;
+        text-align:center;
+        border: none;
+        background-size: 300% 100%;
+    
+        border-radius: 50px;
+        moz-transition: all .4s ease-in-out;
+        -o-transition: all .4s ease-in-out;
+        -webkit-transition: all .4s ease-in-out;
+        transition: all .4s ease-in-out;
+    }
+    
+    .btn-hover:hover {
+        background-position: 100% 0;
+        moz-transition: all .4s ease-in-out;
+        -o-transition: all .4s ease-in-out;
+        -webkit-transition: all .4s ease-in-out;
+        transition: all .4s ease-in-out;
+    }
+    
+    .btn-hover:focus {
+        outline: none;
+    }
+    .btn-hover.color-8 {
+      background-image: linear-gradient(to right, #29323c, #485563, #2b5876, #4e4376);
+      box-shadow: 0 4px 15px 0 rgba(45, 54, 65, 0.75);
+      
+  }
+
+
+    }
+    
+
+    .a1 {
+      position: absolute;
+      bottom: 10px;
+      left: 40%;
+
+      img {
+        width: 30px;
+        animation: arrowBlink 2s infinite;
+      }
+
+      @keyframes arrowBlink {
+        100% {
+          opacity: 0;
+        }
+      }
+    }
+  }
 }
+
