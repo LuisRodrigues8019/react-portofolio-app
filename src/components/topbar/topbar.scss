@@ -52,6 +52,10 @@
        .a1{
         color: $mainColor;
         color: inherit;
+
+        :hover{
+          color: #be2f29;
+        }
        }
 
         span {
