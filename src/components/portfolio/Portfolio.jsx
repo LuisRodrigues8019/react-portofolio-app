@@ -17,20 +17,17 @@ export default function Portfolio() {
   const list = [
     {
       id: "frontend",
-      title: "Front End Skills",
+      title: "Front End",
     },
     {
       id: "backend",
-      title: "Back End Skills",
+      title: "Back End",
     },
     {
       id: "ohter",
-      title: "Other Skills",
+      title: "Others",
     },
-    {
-      id: "web",
-      title: "Web App",
-    },
+   
    
   ];
 
@@ -46,9 +43,6 @@ export default function Portfolio() {
         case "ohter":
         setData(otherPortfolio);
         break;
-        case "web":
-        setData(designPortfolio);
-        break;
         default:
           setData(frontendPortfolio);
     }
@@ -57,7 +51,7 @@ export default function Portfolio() {
 
   return (
     <div className="portfolio" id="portfolio">
-      <h1>Portfolio</h1>
+      <h1>Skills</h1>
       <ul>
         {list.map((item) => (
           <PortfolioList title={item.title} active={selected === item.id} setSelected={setSelected} id={item.id} />
@@ -66,8 +60,9 @@ export default function Portfolio() {
       <div className="container">
         {data.map((d)=> 
         <div className="item">
+          <a href={d.url} target="_blank">
           <img src={d.img} />
-
+          </a>
           <h3>{d.title}</h3>
         </div>
         )}

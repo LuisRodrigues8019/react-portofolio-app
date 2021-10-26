@@ -1,3 +1,117 @@
-.works{
-    background-color: lightgreen;
+@import "../../global.scss";
+
+.works {
+  background-image: linear-gradient(to right, #29323c, #485563, #2b5876, #4e4376);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+
+  .arrow{
+    height: 50px;
+    position: absolute;
+    cursor: pointer;
+
+    &.left{
+      left: 100px;
+      transform: rotateY(180deg);
+    }
+
+    &.right{
+      right: 100px;
+    }
+  }
+
+  .slider {
+    height: 350px;
+    display: flex;
+    position: absolute;
+    left: 0;
+    transition: all 1s ease-out;
+
+    .container {
+      width: 100vw;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      .item {
+        width: 700px;
+        height: 100%;
+        background-color: white;
+        border-radius: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .left {
+          flex: 4;
+          height: 80%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+
+          .leftContainer {
+            width: 90%;
+            height: 70%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+            .imgContainer {
+              width: 40px;
+              height: 40px;
+              border-radius: 50%;
+              background-color: rgb(245, 179, 155);
+              display: flex;
+              align-items: center;
+              justify-content: center;
+
+              img {
+                width: 25px;
+              }
+            }
+            h2 {
+              font-size: 20px;
+              color: black;
+            }
+            p {
+              font-size: 13px;
+              text-align: justify;
+             color: #1A2C42;
+            }
+            span {
+              font-size: 12px;
+              font-weight: 600;
+              text-decoration: underline;
+              cursor: pointer;
+            }
+            a{
+              color: black;
+
+              &:hover{
+              color: #ecaf44;
+        
+              }
+            }
+          }
+        }
+        .right {
+          flex: 8;
+          height: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          overflow: hidden;
+
+          img {
+            width: 400px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px 0 rgba(45, 54, 65, 0.75);
+      
+          }
+        }
+      }
+    }
+  }
 }

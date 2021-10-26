@@ -34,7 +34,7 @@
             width: 220px;
             height: 150px;
             border-radius: 20px;
-            border: 1px solid #ecaf44;
+            border: 1px solid #1A2C42;
             margin: 10px 20px;
             display: flex;
             align-items: center;
@@ -43,10 +43,12 @@
             position: relative;
             transition: all 0.5s ease;
             cursor: pointer;
+            box-shadow: 0 4px 15px 0 rgba(45, 54, 65, 0.75);
 
             h3{
                 position: absolute;
                 font-size: 20px;
+                z-index: -1;
             }
 
             img{
@@ -54,20 +56,29 @@
                 height: 100%;
                 object-fit: cover;
                 z-index: 1;
-                
+                overflow: hidden;   
             }
+           
+
             
             &:hover{
                 background-color: $mainColor;
 
                 img{
                     opacity: 0.2;
-                    z-index: 0;
+                    z-index: 1;
+                    overflow: hidden;
                 }
+
+                h3{
+                    position: absolute;
+                    font-size: 20px;
+                    z-index: 1;
+                }
+ 
+
             }
-            a{
-            
-            }
+           
 
         }
     }
