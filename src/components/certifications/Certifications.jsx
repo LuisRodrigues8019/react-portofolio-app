@@ -10,7 +10,7 @@ export default function Certifications() {
       img:
         "assets/jsudemy.png",
       desc:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat magnam dolorem.",
+        "Online javascript certification on Udemy",
         
     },
     {
@@ -19,7 +19,7 @@ export default function Certifications() {
       img:
         "assets/becode.jpeg",
       desc:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat magnam dolorem recusandae perspiciatis ducimus vel hic temporibus. ",
+        "Certification for having successfully completed the junior web developer training at Becode.org ",
         featured: true,
     },
     {
@@ -28,7 +28,7 @@ export default function Certifications() {
       img:
         "assets/linkedinreact.png",
       desc:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat magnam dolorem",
+        "Online ReactJs essentials certificattion on Linkedin",
     },
    
    

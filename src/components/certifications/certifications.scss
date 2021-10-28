@@ -57,7 +57,14 @@
 
             .center{
                 padding: 10px;
-                background-color: rgb(236, 226, 228);
+                background-image: linear-gradient(
+                    to right,
+                    #29323c,
+                    #485563,
+                    #2b5876,
+                    #4e4376
+                  );
+                color: white;
                 border-radius: 10px;
             }
 
