@@ -1,7 +1,7 @@
 @import "../../global.scss";
 
 
-.portfolio{
+.skills{
     background-color:white;
     display: flex;
     flex-direction: column;
@@ -44,11 +44,13 @@
             transition: all 0.5s ease;
             cursor: pointer;
             box-shadow: 0 4px 15px 0 rgba(45, 54, 65, 0.75);
+            overflow: hidden;  
 
             h3{
                 position: absolute;
                 font-size: 20px;
                 z-index: -1;
+                overflow: hidden;   
             }
 
             img{
@@ -74,6 +76,7 @@
                     position: absolute;
                     font-size: 20px;
                     z-index: 1;
+                   
                 }
  
 

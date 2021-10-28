@@ -1,16 +1,14 @@
-import "./portfolio.scss";
+import "./skills.scss";
 import { useEffect, useState } from "react";
-import PortfolioList from "../porfoliolist/PortfolioList";
+import SkillsList from "../skillslist/SkillsList";
 
 import {
-  frontendPortfolio,
-  backendPortfolio,
-  otherPortfolio,
-  designPortfolio
-
+  frontendSkills,
+  backendSkills,
+  otherSkills,
 } from "../../data";
 
-export default function Portfolio() {
+export default function Skills() {
   const [selected, setSelected] = useState("frontend");
   const [data, setData] = useState([]);
 
@@ -35,32 +33,32 @@ export default function Portfolio() {
 
     switch(selected){
       case "frontend":
-        setData(frontendPortfolio);
+        setData(frontendSkills);
         break;
         case "backend":
-        setData(backendPortfolio);
+        setData(backendSkills);
         break;
         case "ohter":
-        setData(otherPortfolio);
+        setData(otherSkills);
         break;
         default:
-          setData(frontendPortfolio);
+          setData(frontendSkills);
     }
 
   },[selected])
 
   return (
-    <div className="portfolio" id="portfolio">
+    <div className="skills" id="skills">
       <h1>Skills</h1>
       <ul>
         {list.map((item) => (
-          <PortfolioList title={item.title} active={selected === item.id} setSelected={setSelected} id={item.id} />
+          <SkillsList title={item.title} active={selected === item.id} setSelected={setSelected} id={item.id} />
         ))}
       </ul>
       <div className="container">
         {data.map((d)=> 
         <div className="item">
-          <a href={d.url} target="_blank">
+          <a href={d.url} target="_blank" without rel="noreferrer">
           <img src={d.img} />
           </a>
           <h3>{d.title}</h3>

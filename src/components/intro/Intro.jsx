@@ -31,14 +31,14 @@ export default function Intro() {
                     <h3><span ref={textRef}></span></h3>  
                    
                <div className="button">
-               <a href="assets/rodriguesluisresume.pdf" target="_blank">
+               <a href="assets/rodriguesluisresume.pdf" target="_blank" without rel="noreferrer">
                <button className="btn-hover color-8">Download Resume</button> 
                </a> 
                </div>
               
                 </div>  
                 
-                <a href="#portfolio" className="a1">
+                <a href="#about" className="a1">
                     <img src="assets/down.png"/>
                 </a>
             </div>

@@ -1,4 +1,4 @@
-export const frontendPortfolio = [
+export const frontendSkills = [
   {
     id: 1,
     title: "Html",
@@ -36,7 +36,7 @@ export const frontendPortfolio = [
   },
 ];
 
-export const backendPortfolio = [
+export const backendSkills = [
   {
     id: 1,
     title: "NodeJs",
@@ -51,7 +51,7 @@ export const backendPortfolio = [
   },
 ];
 
-export const otherPortfolio = [
+export const otherSkills = [
   {
     id: 1,
     title: "WordPress",
