@@ -1,3 +1,91 @@
 .contact{
-    background-color: lightcoral;
+    background-color: white;
+    display: flex;
+
+    .left{
+        flex: 1;
+        overflow: hidden;
+
+        img{
+            height: 100%;
+        }
+    }
+
+    .right{
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        h2{
+            font-size: 30px;
+            color: #0c1115;
+        }
+        
+        form{
+            width: 70%;
+            height: 70%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-around;
+           
+
+            input{
+                width: 300px;
+                height: 30px;
+                font-size: 14px;
+                
+            }
+
+            textarea{
+                width: 300px;
+                height: 200px;
+                font-size: 14px;
+            }
+   
+                .btn-hover {
+                    width: 150px;
+                    font-size: 16px;
+                    font-weight: 500;
+                    color: #fff;
+                    cursor: pointer;
+                    margin: 20px;
+                    height: 30px;
+                    text-align:center;
+                    border: none;
+                    background-size: 300% 100%;
+                    border-radius: 10px;
+                    moz-transition: all .4s ease-in-out;
+                    -o-transition: all .4s ease-in-out;
+                    -webkit-transition: all .4s ease-in-out;
+                    transition: all .4s ease-in-out;
+                }
+                
+                .btn-hover:hover {
+                    background-position: 100% 0;
+                    moz-transition: all .4s ease-in-out;
+                    -o-transition: all .4s ease-in-out;
+                    -webkit-transition: all .4s ease-in-out;
+                    transition: all .4s ease-in-out;
+                }
+                
+                .btn-hover:focus {
+                    outline: none;
+                }
+                .btn-hover.color-7 {
+                  background-image: linear-gradient(to right, #29323c, #485563, #2b5876, #4e4376);
+                  box-shadow: 0 4px 15px 0 rgba(45, 54, 65, 0.75);
+                  
+              }
+
+              span{
+                  color: #1A2C42;
+              }
+
+                
+            
+        }
+    }
 }
