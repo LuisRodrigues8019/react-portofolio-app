@@ -1,6 +1,13 @@
+@import "../../global.scss";
+
 .intro {
   background-color: white;
   display: flex;
+
+  @include mobile {
+    flex-direction: column;
+    align-items: center;
+  }
 
   .left {
     flex: 0.5;
@@ -9,15 +16,29 @@
     .imgContainer {
       width: 750px;
       height: 750px;
-      background-image: linear-gradient(to right, #29323c, #485563, #2b5876, #4e4376);
+      background-image: linear-gradient(
+        to right,
+        #29323c,
+        #485563,
+        #2b5876,
+        #4e4376
+      );
       border-radius: 50%;
       display: flex;
       align-items: flex-end;
       justify-content: center;
       float: right;
 
+      @include mobile {
+        align-items: flex-start;
+      }
+
       img {
         height: 90%;
+
+        @include mobile {
+          height: 50%;
+        }
       }
     }
   }
@@ -33,21 +54,32 @@
       flex-direction: column;
       justify-content: center;
 
+      @include mobile {
+        padding-left: 0;
+        align-items: center;
+      }
+
       h1 {
         font-size: 60px;
         margin: 10px 0;
         color: #0c1115;
-        
+
+        @include mobile {
+          font-size: 40px;
+        }
       }
 
       h2 {
         font-size: 35px;
         color: #0c1115;
-        
       }
 
       h3 {
         font-size: 30px;
+
+        @include mobile {
+          font-size: 20px;
+        }
 
         span {
           font-size: 30px;
@@ -65,56 +97,61 @@
               opacity: 0;
             }
           }
-         
-    
         }
       }
-      
     }
-    .button {
+    .btn-hover {
       margin-top: 20px;
       margin-left: 80px;
       justify-content: center;
+      width: 170px;
+      font-size: 16px;
+      font-weight: 600;
+      color: #fff;
+      cursor: pointer;
+      margin: 20px;
+      height: 45px;
+      text-align: center;
+      border: none;
+      background-size: 300% 100%;
 
-      .btn-hover {
-        width: 170px;
-        font-size: 16px;
-        font-weight: 600;
-        color: #fff;
-        cursor: pointer;
-        margin: 20px;
-        height: 45px;
-        text-align:center;
-        border: none;
-        background-size: 300% 100%;
-    
-        border-radius: 50px;
-        moz-transition: all .4s ease-in-out;
-        -o-transition: all .4s ease-in-out;
-        -webkit-transition: all .4s ease-in-out;
-        transition: all .4s ease-in-out;
+      border-radius: 50px;
+      moz-transition: all 0.4s ease-in-out;
+      -o-transition: all 0.4s ease-in-out;
+      -webkit-transition: all 0.4s ease-in-out;
+      transition: all 0.4s ease-in-out;
+
+      @include mobile {
+        justify-content: center;
+        align-items: center;
+        width: 150px;
+        margin-top: 10px;
+        font-size: 14px;
+        height: 40px;
+      }
     }
-    
+
     .btn-hover:hover {
-        background-position: 100% 0;
-        moz-transition: all .4s ease-in-out;
-        -o-transition: all .4s ease-in-out;
-        -webkit-transition: all .4s ease-in-out;
-        transition: all .4s ease-in-out;
+      background-position: 100% 0;
+      moz-transition: all 0.4s ease-in-out;
+      -o-transition: all 0.4s ease-in-out;
+      -webkit-transition: all 0.4s ease-in-out;
+      transition: all 0.4s ease-in-out;
     }
-    
+
     .btn-hover:focus {
-        outline: none;
+      outline: none;
     }
     .btn-hover.color-8 {
-      background-image: linear-gradient(to right, #29323c, #485563, #2b5876, #4e4376);
+      background-image: linear-gradient(
+        to right,
+        #29323c,
+        #485563,
+        #2b5876,
+        #4e4376
+      );
       box-shadow: 0 4px 15px 0 rgba(45, 54, 65, 0.75);
-      
-  }
-
-
     }
-    
 
     .a1 {
       position: absolute;
@@ -134,4 +171,3 @@
     }
   }
 }
-

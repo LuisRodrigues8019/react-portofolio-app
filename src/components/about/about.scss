@@ -1,3 +1,5 @@
+@import "../../global.scss";
+
 .about {
   background-color: white;
 
@@ -8,6 +10,12 @@
   h1 {
     font-size: 50px;
     color: #0c1115;
+
+    @include mobile{
+      font-size: 24px;
+    color: #0c1115;
+     
+    }
   }
 
   .container {
@@ -26,7 +34,16 @@
       #4e4376
     );
     padding: 30px;
-    width: 600px;
+    width: 500px;
+
+    @include mobile{
+      margin-top: 80px;
+     width: 280px;
+     height: 250px;
+     padding: 30px;
+    }
+
+ 
     
     .text {
       margin-top: 25px;
@@ -36,15 +53,34 @@
       align-items: center;
       justify-content: center;
 
+      @include mobile{
+        width: 280px;
+        height: 200px;
+       
+        
+       }
+
       p {
         text-align: justify;
         font-size: 15px;
         color: white;
+        @include mobile{
+          text-align: justify;
+          font-size: 13px;
+          
+         }
       }
+    
 
       a{
         font-size: 15px;
         color: white;
+
+        @include mobile{
+          text-align: justify;
+          font-size: 13px;
+          
+         }
       }
     }
 
@@ -55,6 +91,13 @@
       display: flex;
       align-items: center;
       justify-content: center;
+
+      @include mobile{
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        
+       }
       
       img {
         width: 100%;
