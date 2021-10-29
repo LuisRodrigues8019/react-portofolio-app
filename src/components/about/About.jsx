@@ -19,9 +19,16 @@ export default function About() {
               <br /> Currently looking for an opportunity to showcase my
               technical skills and values ​​such as teamwork, adaptability,
               perseverance.
-              </p>
-              <br/>     
-            <a href="https://www.linkedin.com/in/luis-rodrigues-da-silva/" target="_blank" without rel="noreferrer">More about me ...</a>
+            </p>
+            <br />
+            <a
+              href="https://www.linkedin.com/in/luis-rodrigues-da-silva/"
+              target="_blank"
+              without
+              rel="noreferrer"
+            >
+              More about me ...
+            </a>
           </div>
         </div>
       </div>

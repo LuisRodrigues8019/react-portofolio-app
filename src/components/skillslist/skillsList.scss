@@ -1,20 +1,19 @@
 @import "../../global.scss";
 
+.SkillsList {
+  font-size: 14px;
+  margin-right: 50px;
+  padding: 7px;
+  border-radius: 10px;
+  cursor: pointer;
 
-.SkillsList{
-    font-size: 14px;
-    margin-right: 50px;
-    padding: 7px;
-    border-radius: 10px;
-    cursor: pointer;
-    
-    @include mobile{
-        margin-top: 20px;
-        margin-right: 20px;
-      }
+  @include mobile {
+    margin-top: 20px;
+    margin-right: 20px;
+  }
 
-    &.active{
-        background-color: $mainColor;
-        color: white;
-    }
+  &.active {
+    background-color: $mainColor;
+    color: white;
+  }
 }
