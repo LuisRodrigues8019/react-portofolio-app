@@ -43,7 +43,7 @@
     @include mobile {
       margin-top: 80px;
       width: 280px;
-      height: 270px;
+      height: 280px;
       padding: 30px;
     }
 
@@ -57,7 +57,8 @@
 
       @include mobile {
         width: 280px;
-        height: 250px;
+        height: 260px;
+        margin-top: 25px;
       }
 
       p {
